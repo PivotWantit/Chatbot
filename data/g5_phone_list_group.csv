@@ -1,0 +1,15 @@
+﻿,plg_id,plg_maker,plg_group,plg_group_name
+0,1,samsung,samsung,삼성 기타
+1,2,samsung,s_series,S 시리즈
+2,3,samsung,note_series,Note 시리즈
+3,4,samsung,j_series,J 시리즈
+4,5,samsung,a_series,A 시리즈
+5,6,samsung,samsung_folder,삼성 Folder 시리즈
+6,7,lg,lg,엘지 기타
+7,8,lg,g_series,G 시리즈
+8,9,lg,q_series,Q 시리즈
+9,10,lg,v_series,V 시리즈
+10,11,lg,x_series,X 시리즈
+11,12,lg,k_series,K 시리즈
+12,13,lg,lg_folder,엘지  Folder 시리즈
+13,15,samsung,z_series,Z 시리즈

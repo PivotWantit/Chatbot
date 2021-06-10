@@ -1,0 +1,98 @@
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+172.17.0.1 - - [04/May/2021 09:23:17] "[37mPOST /event/list HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 09:23:39] "[37mPOST /notice/page1 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:05] "[37mPOST /purchase/maker HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:07] "[37mPOST /purchase/group HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:09] "[37mPOST /purchase/model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:11] "[37mPOST /purchase/spec HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:12] "[37mPOST /purchase/storage HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:13] "[37mPOST /purchase/marketprice HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:15] "[37mPOST /purchase/color HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:16] "[37mPOST /purchase/marketprice HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:17] "[37mPOST /purchase/color HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:18] "[37mPOST /purchase/check HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:19] "[37mPOST /purchase/list HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 11:23:21] "[37mPOST /purchase/item HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 14:44:42] "[37mPOST /purchase/maker HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 14:44:47] "[37mPOST /event/list HTTP/1.1[0m" 200 -
+172.17.0.1 - - [04/May/2021 14:45:32] "[37mPOST /notice/page1 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:11:46] "[37mPOST /notice/page1 HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:11:56] "[37mPOST /purchase/maker HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:11:57] "[37mPOST /purchase/group HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:11] "[37mPOST /purchase/spec HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:12] "[37mPOST /purchase/storage HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:13] "[37mPOST /purchase/marketprice HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:15] "[37mPOST /purchase/color HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:16] "[37mPOST /purchase/storage HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:20] "[37mPOST /purchase/maker HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:21] "[37mPOST /purchase/group HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:23] "[37mPOST /purchase/model HTTP/1.1[0m" 200 -
+172.17.0.1 - - [05/May/2021 01:12:33] "[37mPOST /purchase/spec HTTP/1.1[0m" 200 -
+[2021-05-05 01:12:34,397] ERROR in app: Exception on /purchase/storage [POST]
+Traceback (most recent call last):
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/indexes/range.py", line 351, in get_loc
+    return self._range.index(new_key)
+ValueError: 0 is not in range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 292, in purchase_storage
+    {"simpleText" : f"짠~ {df2['ppl_name'][0]}까지 선택하셨습니다.\n용량은 어느 정도로 생각하시나요?"}],
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/series.py", line 853, in __getitem__
+    return self._get_value(key)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/series.py", line 961, in _get_value
+    loc = self.index.get_loc(label)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/indexes/range.py", line 353, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+172.17.0.1 - - [05/May/2021 01:12:34] "[35m[1mPOST /purchase/storage HTTP/1.1[0m" 500 -
+[2021-05-05 01:12:39,354] ERROR in app: Exception on /purchase/storage [POST]
+Traceback (most recent call last):
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/indexes/range.py", line 351, in get_loc
+    return self._range.index(new_key)
+ValueError: 0 is not in range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "main.py", line 292, in purchase_storage
+    {"simpleText" : f"짠~ {df2['ppl_name'][0]}까지 선택하셨습니다.\n용량은 어느 정도로 생각하시나요?"}],
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/series.py", line 853, in __getitem__
+    return self._get_value(key)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/series.py", line 961, in _get_value
+    loc = self.index.get_loc(label)
+  File "/workspace/RealSeller-ChatBot/venv/lib/python3.7/site-packages/pandas/core/indexes/range.py", line 353, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+172.17.0.1 - - [05/May/2021 01:12:39] "[35m[1mPOST /purchase/storage HTTP/1.1[0m" 500 -
+172.17.0.1 - - [05/May/2021 03:56:15] "[37mPOST /event/list HTTP/1.1[0m" 200 -
